@@ -1,5 +1,6 @@
 .btn {
   font-weight: 600;
+  padding: 12px 0;
   &.btn-primary {
     background: $theme-blue;
     border-color: $theme-blue;
@@ -8,7 +9,6 @@
   &.btn-orange {
     background: $theme-orange;
     border: $theme-orange;
-    padding: 10px 0;
     color: #fff;
   }
   .btn-icon {
@@ -49,14 +49,46 @@
 }
 .btn-help {
   font-size: 20px;
-  left: 30px;
+  left: 20px;
 }
 .btn-blue-outline {
   border: solid 1px $theme-blue;
   background-color: transparent;
   color: $theme-blue;
 }
+.btn-light-outline {
+  border: solid 1px $theme-transparant;
+  background-color: transparent;
+  color: $theme-transparant;
+}
 .btn-light {
   background-color: $theme-transparant-grey;
   color: $theme-transparant;
+}
+.btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 40px;
+  line-height: 42px;
+  opacity: 1;
+  font-weight: normal;
+  width: 40px;
+  height: 40px;
+  &:hover {
+    background-color: $theme-transparant-grey;
+    border-radius: 10px;
+  }
+}
+.menuButton {
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: $border-radius;
+  &:hover,
+  &:focus {
+    background-color: $theme-transparant-grey;
+    border: none;
+  }
 }

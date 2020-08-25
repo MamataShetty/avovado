@@ -24,29 +24,6 @@
       outline: none;
     }
   }
-  .switch-ui {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .nav {
-      background-color: rgba(0, 0, 0, 0.12);
-      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
-      border-radius: 12px;
-      .nav-link {
-        border-radius: 12px;
-        color: #000;
-        min-width: 182px;
-        text-align: center;
-        padding: 11px 12px;
-        font-weight: 600;
-      }
-      .nav-link.active {
-        background-color: #fff;
-        color: $theme-blue;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
-      }
-    }
-  }
   h6 {
     font-weight: bold;
     font-size: 16px;
