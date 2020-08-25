@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Denver-Serial-Regular';
+  src: url('Denver-Serial-Regular.eot');
+  src: url('Denver-Serial-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Denver-Serial-Regular.svg#Denver-Serial-Regular') format('svg'),
+       url('Denver-Serial-Regular.ttf') format('truetype'),
+       url('Denver-Serial-Regular.woff') format('woff'),
+       url('Denver-Serial-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

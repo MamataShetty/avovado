@@ -1,0 +1,62 @@
+.btn {
+  font-weight: 600;
+  &.btn-primary {
+    background: $theme-blue;
+    border-color: $theme-blue;
+    padding: 10px 0;
+  }
+  &.btn-orange {
+    background: $theme-orange;
+    border: $theme-orange;
+    padding: 10px 0;
+    color: #fff;
+  }
+  .btn-icon {
+    height: 24px;
+    width: 24px;
+    vertical-align: top;
+    display: inline-block;
+  }
+  &.btn-cream {
+    background-color: $theme-light-cream;
+    padding: 10px 15px;
+    font-weight: 700;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+.btn-control-transparant {
+  background: rgba(0, 0, 0, 0.56);
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  &.btn-sm {
+    height: 40px;
+    width: 40px;
+  }
+  &.btn-orange {
+    background-color: $theme-orange;
+  }
+}
+.btn-upgrade {
+  background: #ace5f6;
+  border-radius: $border-radius;
+}
+.btn-help {
+  font-size: 20px;
+  left: 30px;
+}
+.btn-blue-outline {
+  border: solid 1px $theme-blue;
+  background-color: transparent;
+  color: $theme-blue;
+}
+.btn-light {
+  background-color: $theme-transparant-grey;
+  color: $theme-transparant;
+}

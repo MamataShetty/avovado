@@ -1,0 +1,99 @@
+.transparent-btn {
+  background-color: $theme-transparant;
+  border-radius: 4px;
+  align-items: center;
+}
+.input-copy-link {
+  input {
+    border: none;
+  }
+}
+.video-container {
+  position: relative;
+  grid-gap: 10px;
+  padding: 0 10px;
+  // grid-template-columns: repeat(4, 80px);
+  // grid-template-rows: repeat(3, 100px);
+  justify-content: center;
+  align-content: end;
+  display: block;
+  @media (min-width: 767px) {
+    height: calc(100vh - 140px);
+    display: flex;
+  }
+  .video-holder {
+    background-position: top;
+    background-size: cover;
+    height: 100%;
+  }
+  .item {
+    background: $theme-transparant;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    height: 40vh;
+    @media (min-width: 767px) {
+      height: auto;
+    }
+  }
+  &.invitelink {
+    grid-template-columns: repeat(2, 50%);
+    .item {
+      @media (min-width: 767px) {
+        width: 50%;
+        grid-column: 1 / 1;
+      }
+    }
+  }
+}
+.footer-stick-bottom {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  left: 0;
+}
+.control-action {
+  h6 {
+    color: #fff;
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  .btn-control-transparant.btn-sm {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  span {
+    background-position: center;
+  }
+}
+.illustration-blue {
+  background-color: #1b9c84;
+  display: flex;
+}
+.body-QFTB {
+  background-color: $theme-light-cream;
+  padding-left: 48px;
+  padding-right: 48px;
+  background-image: url("../images/landing/bird.png");
+  background-size: 165px 121px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  text-align: left;
+}
+.rec-icon-circle {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: $theme-orange;
+  display: inline-block;
+  // margin: 17px 12px 0 0;
+}
+.footer-record {
+  border-top: solid 1px $theme-transparant-grey;
+  .btn {
+    height: 47px;
+    width: 100%;
+  }
+}

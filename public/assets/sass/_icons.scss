@@ -1,0 +1,137 @@
+.icon-video {
+  background-image: url("../images/icons/no-video.svg");
+  width: 30px;
+  height: 30px;
+}
+.icon-mike {
+  background-image: url("../images/icons/mike.svg");
+  width: 30px;
+  height: 30px;
+}
+.icon-settings {
+  background-image: url("../images/icons/settings.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  &.icon-sm {
+    width: 20px;
+    height: 20px;
+  }
+}
+.icon-group {
+  background-image: url("../images/icons/group.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 23px;
+  width: 30px;
+  &.icon-sm {
+    width: 15px;
+    height: 15px;
+  }
+}
+.icon-lock {
+  background-image: url("../images/icons/lock.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  &.icon-sm {
+    width: 15px;
+    height: 15px;
+  }
+}
+.icon-clock {
+  background-image: url("../images/icons/clock.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  &.icon-sm {
+    width: 15px;
+    height: 15px;
+  }
+}
+.icon-picture {
+  background-image: url("../images/icons/window.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 23px;
+  &.icon-sm {
+    width: 15px;
+    height: 15px;
+  }
+}
+.icon-camera {
+  background-image: url("../images/icons/camera.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 23px;
+  &.icon-sm {
+    width: 15px;
+    height: 15px;
+  }
+}
+.icon-share {
+  background-image: url("../images/icons/share.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  &.icon-sm {
+    width: 15px;
+    height: 15px;
+  }
+}
+.icon-record {
+  background-image: url("../images/icons/record.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  &.icon-sm {
+    width: 15px;
+    height: 15px;
+  }
+}
+.icon-no-audio {
+  background-image: url("../images/icons/no-audio.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  &.icon-sm {
+    width: 15px;
+    height: 15px;
+  }
+}
+.icon-chat {
+  background-image: url("../images/icons/chat.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 23px;
+  &.icon-sm {
+    width: 15px;
+    height: 15px;
+  }
+}
+.icon-hand {
+  background-image: url("../images/icons/hand.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  &.icon-sm {
+    width: 15px;
+    height: 15px;
+  }
+}
+.BaseIcon--primary-eZYy {
+  fill: $theme-blue;
+}
+.BaseIcon--sized-2utE {
+  width: 24px;
+  height: 24px;
+}

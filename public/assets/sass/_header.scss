@@ -1,0 +1,132 @@
+.avocado-navbar {
+	.navbar {
+		position: fixed;
+		height: 68px;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 4;
+		width: 100%;
+		background: transparent;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		.navbar-brand img{
+			 width: 95px;
+			@media (min-width: 767px) {
+				 width: 130px;
+			}
+		}
+		.dropdown-item.active, .dropdown-item:active {
+			color: #fff;
+			background-color:$primary;
+		}
+
+		.show > .btn-primary.dropdown-toggle {
+			background-color: $primary
+		}
+
+		@media (max-width: 767px) {
+			height: 56px;
+		}
+		.navbar-toggler {
+			border: none;
+			padding: 0;
+			&:focus {
+				outline: none;
+			}
+			.navbar-toggler-icon {
+				background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(60, 50, 170, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+			}
+		}
+		.navbar-collapse.show {
+			.navbar-toggler-icon {
+				background-image: none;
+				position: relative;
+				&:before,
+				&:after {
+					position: absolute;
+					right: 15px;
+					content: ' ';
+					height: 33px;
+					width: 2px;
+					background-color: #fff;
+					animation: 2s linear;
+				}
+				&:before {
+					transform: rotate(45deg);
+				}
+				&:after {
+					transform: rotate(-45deg);
+				}
+				 @media (max-width: 767px) {
+					&:before,
+						&:after {
+							height:25px;
+						}
+				 }
+			}
+		}
+		.navbar-collapse {
+			@media (max-width: 992px) {
+				position: fixed;
+				height: 100vh;
+				width: 100%;
+				top: 0;
+				left: 0;
+				padding:15px 40px;
+				transition: .2s linear;
+				.active .nav-link {
+					color: #fff;
+				}
+				.nav-link {
+					color: #fff;
+					margin: 10px 0;
+				}
+
+			}
+			@media (max-width: 767px) {
+				padding:10px 16px;
+			 
+			}
+		}
+		.collapsing {
+			-webkit-transition: height .2s linear;
+			-o-transition: height .2s linear;
+			transition: height .2s linear;
+		}
+		.nav-link {
+			color: $primary;
+			font-size: 20px;
+			line-height: 28px;
+			text-decoration: none;
+			font-family: "Sofia Medium";
+			margin: 0 6px;
+			&.active {
+				color: #808080;
+				@media (min-width: 767px) {
+				}
+			}
+			&.btn {
+				line-height: normal;
+				padding: 8px 20px;
+				font-family: "Sofia Pro";
+
+				&:hover,&:focus {
+					color:#fff;
+				}
+			}
+		}
+		.active .nav-link {
+			color: $primary;
+		}
+		a {
+			color: $primary;
+		}
+	}
+}
