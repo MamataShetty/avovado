@@ -31,10 +31,10 @@
           </div>
           <div class="mr-4 d-flex">
             <button class="btn btn-upgrade mr-1 py-2 px-3 d-none d-md-block">Upgrade</button>
-            <div class="btn-control-transparant btn-sm mr-1 d-none d-md-inline-block">
+            <div class="btn-control-transparant btn-sm mr-1 d-none d-md-flex">
               <span class="icon-picture"></span>
             </div>
-            <div class="btn-control-transparant btn-sm mr-1 d-none d-md-inline-block" data-toggle="modal" data-target="#infoModal">
+            <div class="btn-control-transparant btn-sm mr-1 d-none d-md-flex" data-toggle="modal" data-target="#infoModal">
               <span class="icon-settings icon-sm d-block"></span>
             </div>
             <div class="dropdown custom-dropdown dropdown-settings mr-1">
@@ -58,21 +58,21 @@
             </div>
           </div>
         </nav>
-        <div class="video-container invitelink">
+        <div class="video-container invitelink" data-breakpoints='{"bp1":400,"bp2":800,"bp3":1200}' data-observe-resizes  >
           <div class="box item">
             <div class="video-holder" style="background-image: url(https://ishamjonesrealty.com/wp-content/uploads/2020/03/tina-tina-0004-scaled.jpg);"></div>
           </div>
           <div class="box item d-flex text-center align-items-center justify-content-center">
             <div class="text-center p-4">
               <h3 class="font-denvir text-white mb-3"><span class="icon-clock mr-2"></span>Waiting for others to arrive</h3>
-              <div class="d-md-flex justify-content-center mb-4 d-block">
+              <div class="justify-content-center mb-4 copy-link-action">
                 <div class="input-copy-link border-rounded">
                   <svg width="100%" height="100%" fill="#f8e3c8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="BaseIcon-3KAM BaseIcon--sized-2utE icon-3oBo">
                     <path clip-rule="evenodd" d="m7.49852 11.0629.24435-.0629h8.51423l.2444.0629c.863.2221 1.4985 1.0079 1.4985 1.9371v5c0 1.1046-.8954 2-2 2h-8c-1.10457 0-2-.8954-2-2v-5c0-.9292.63547-1.715 1.49852-1.9371zm1.50148-4.0629v2h6v-2c0-1.65685-1.3431-3-3-3s-3 1.34315-3 3zm8 0c0-2.76142-2.2386-5-5-5-2.76142 0-5 2.23858-5 5v2.12602c-1.72523.44404-3 2.01018-3 3.87398v5c0 2.2091 1.79086 4 4 4h8c2.2091 0 4-1.7909 4-4v-5c0-1.8638-1.2748-3.42994-3-3.87398zm-5 6c-.5523 0-1 .4477-1 1v2c0 .5523.4477 1 1 1s1-.4477 1-1v-2c0-.5523-.4477-1-1-1z" fill-rule="evenodd"></path>
                   </svg>
                   <input value="https://whereby.com/mamata123" />
                 </div>
-                <button class="btn btn-cream ml-md-3 mt-4 mt-md-0 border-rounded">Copy Link</button>
+                <button class="btn btn-cream ml-md-3 mt-4 mt-md-0 border-rounded text-nowrap">Copy Link</button>
               </div>
               <p class="text-white w-75 mx-auto d-none d-md-block">This room is locked. Guests need to knock to enter locked rooms.<span><u>Unlock room</u></span></p>
               <div>
@@ -147,10 +147,10 @@
               <div class="dropdown-menu">
                 <ul class="list-unstyled">
                   <li>
-                    <a href="/leave-room" data-toggle="modal" data-target="#endMeeting">End meeting for all</a>
+                    <a href="#" data-toggle="modal" data-target="#endMeeting">End meeting for all</a>
                   </li>
                   <li>
-                    <a href="">Leaving room</a>
+                    <a href="/left-room">Leaving room</a>
                   </li>
                 </ul>
               </div>
@@ -202,7 +202,7 @@
                   </button>
                   <div class="dropdown-menu font-sm dropdown-menu-right"  aria-labelledby="dropdownMenuWait">
                     <a class="dropdown-item" href="#">Let all in</a>
-                    <a class="dropdown-item" href="#">Reject all</a>
+                    <a class="dropdown-item" href="#">Reject allgit cp</a>
                   </div>
                 </div>
               </div>

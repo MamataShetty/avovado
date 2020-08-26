@@ -8,6 +8,7 @@
 @import "./input";
 @import "./home";
 @import "./modal";
+@import "./user";
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap");
 
@@ -134,6 +135,16 @@ body {
   background: $theme-1;
   height: 100vh;
 }
+.bg-cream {
+  background: $primary;
+}
+.bg-theme-mobile {
+  background: $theme-1;
+  height: 100%;
+  @media (min-width: 767px) {
+    height: 100vh;
+  }
+}
 .font-denvir {
   font-family: "denver-serial-bold";
 }
@@ -157,4 +168,7 @@ a {
 }
 .text-dark {
   color: #000 !important;
+}
+.overflow-scroll {
+  overflow-y: scroll;
 }

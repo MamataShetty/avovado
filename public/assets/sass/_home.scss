@@ -18,6 +18,41 @@
   align-content: end;
   display: block;
   align-items: center;
+
+  &.bp1 {
+    display: block;
+    .item {
+      margin: 0 auto;
+      height: 40vh;
+      width: 80%;
+    }
+    .invitelink .item {
+      width: 100%;
+    }
+    .copy-link-action {
+      display: block;
+      .input-copy-link {
+        width: 100%;
+      }
+    }
+  }
+  &.bp1.bp2 {
+    display: flex;
+    .item {
+      margin: 0 auto;
+      height: 90%;
+      width: 50%;
+    }
+    .invitelink .item {
+      width: 50%;
+    }
+    .copy-link-action {
+      display: flex;
+      .input-copy-link {
+        width: 100%;
+      }
+    }
+  }
   @media (min-width: 767px) {
     height: calc(100vh - 160px);
     display: flex;
@@ -32,7 +67,7 @@
     background: $theme-transparant;
     border-radius: 20px;
     margin-bottom: 20px;
-    height: 40vh;
+    height: 37vh;
     box-shadow: 0 1px 4px $theme-transparant-grey;
     @media (min-width: 767px) {
       height: 70%;
@@ -42,13 +77,6 @@
     }
   }
   &.invitelink {
-    grid-template-columns: repeat(2, 50%);
-    .item {
-      @media (min-width: 767px) {
-        width: 50%;
-        grid-column: 1 / 1;
-      }
-    }
   }
 }
 .footer-stick-bottom {
@@ -125,30 +153,6 @@
     height: 100%;
     position: fixed;
     overflow: hidden;
-    &.bp1 {
-      .video-container {
-        display: block;
-        .item {
-          margin: 0 auto;
-          height: 40vh;
-        }
-        .invitelink .item {
-          width: 100%;
-        }
-      }
-    }
-    &.bp1.bp2 {
-      .video-container {
-        display: flex;
-        .item {
-          margin: 0 auto;
-          height: 90%;
-        }
-        .invitelink .item {
-          width: 50%;
-        }
-      }
-    }
   }
   .sidenav {
     flex-shrink: 0;
@@ -220,4 +224,20 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.list-bullet {
+  list-style: none;
+  li {
+    line-height: 45px;
+    position: relative;
+    &:before {
+      content: "●";
+      height: 10px;
+      padding-right: 12px;
+      width: 10px;
+      font-size: 16px;
+      left: 0;
+      color: rgb(27, 156, 132);
+    }
+  }
 }

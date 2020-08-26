@@ -25,6 +25,20 @@
       width: 100%;
     }
   }
+  &.btn-hover-primary {
+    background: transparent;
+    border: none;
+    &:hover {
+      border: solid 1px $theme-blue;
+    }
+  }
+  &.btn-success {
+    background: $theme-1;
+    border: none;
+    &:hover {
+      // border: solid 1px $theme-blue;
+    }
+  }
 }
 .btn-control-transparant {
   background: rgba(0, 0, 0, 0.56);
