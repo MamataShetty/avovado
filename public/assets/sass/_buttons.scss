@@ -75,6 +75,22 @@
   background-color: transparent;
   color: $theme-transparant;
 }
+.btn-success-outline {
+  border: solid 1px $theme-1;
+  background-color: transparent;
+  color: $theme-1;
+  &:hover {
+    color: $theme-1;
+  }
+}
+.btn-primary-outline {
+  border: solid 1px $theme-blue;
+  background-color: transparent;
+  color: $theme-blue;
+  &:hover {
+    color: $theme-blue;
+  }
+}
 .btn-light {
   background-color: $theme-transparant-grey;
   color: $theme-transparant;

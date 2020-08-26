@@ -11,6 +11,7 @@
 @import "./user";
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 @font-face {
   font-family: "Denver-Serial-Bold";
@@ -171,4 +172,13 @@ a {
 }
 .overflow-scroll {
   overflow-y: scroll;
+}
+.font-xxl {
+  font-size: 80px;
+}
+.box-shadow {
+  box-shadow: 0 1px 4px $theme-transparant-grey;
+}
+.mw-600 {
+  max-width: 600px;
 }

@@ -241,3 +241,17 @@
     }
   }
 }
+
+footer {
+  h1 {
+    font-size: 24px;
+    color: $theme-transparant-dark;
+    margin-bottom: 20px;
+  }
+  a {
+    display: block;
+    color: $theme-transparant-dark;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+}
