@@ -50,3 +50,55 @@
     right: -180px;
   }
 }
+.hamburgerIcon {
+  cursor: pointer;
+  height: 21px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  width: 32px;
+  background: transparent;
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+  &[aria-expanded="true"] {
+    span:nth-child(1) {
+      left: 50%;
+      top: 9px;
+      width: 0%;
+    }
+    span:nth-child(2) {
+      transform: rotate(45deg);
+    }
+    span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+    span:nth-child(4) {
+      left: 50%;
+      top: 9px;
+      width: 0%;
+    }
+  }
+  span {
+    background: black;
+    border-radius: 3px;
+    display: block;
+    height: 3px;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+    width: 100%;
+    &:nth-child(1) {
+      top: 0px;
+    }
+    &:nth-child(2) {
+      top: 9px;
+    }
+    &:nth-child(4) {
+      top: 18px;
+    }
+  }
+}

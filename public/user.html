@@ -18,9 +18,13 @@
     <div class="main-layout">
 			<div class="d-flex justify-content-between align-items-center">
 				<a href="/" class="logo font-l font-denvir text-dark">Avocado</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"><svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg></span>
+				<button class="navbar-toggler hamburgerIcon d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbarSidelink" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
 				</button>
+				
 				<div class="d-none d-md-flex align-items-center">
 					<button class="btn btn-success px-3 border-rounded mr-5"> Upgrade now</button>
 					<div class="font-m d-flex align-items-center">
@@ -29,15 +33,32 @@
 					</div>
 				</div>
 			</div>
+			<div class="collapse d-md-none" id="navbarSidelink" >
+				<ul class="list-unstyled my-5 side-link p-0">
+					<li>
+						<a href="/user" class="active font-bold">Rooms</a>
+					</li>
+					<li>
+						<a href="/subscriptions" class="">Subscription</a>
+					</li>
+					<li>
+						<a href="/account" class="">Account</a>
+					</li>
+					<li>
+						<a href="/privacy" class="">Privacy</a>
+					</li>
+					<li><button class="btn btn-success px-3 border-rounded mr-5"> Upgrade now</button></li>
+				</ul>
+			</div>
 			<div class="container-fluid p-0">
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 d-none d-md-block">
 						<ul class="list-unstyled my-5 side-link p-0">
 							<li>
 								<a href="/user" class="active font-bold">Rooms</a>
 							</li>
 							<li>
-								<a href="/subscription" class="">Subscription</a>
+								<a href="/subscriptions" class="">Subscription</a>
 							</li>
 							<li>
 								<a href="/account" class="">Account</a>

@@ -791,17 +791,19 @@
   list-style: none;
 }
 .list-bullet li {
-  line-height: 45px;
+  margin: 0 0 30px;
   position: relative;
+  padding-left: 24px;
 }
 .list-bullet li:before {
   content: "●";
   height: 10px;
-  padding-right: 12px;
   width: 10px;
-  font-size: 16px;
+  font-size: 24px;
   left: 0;
   color: #1b9c84;
+  position: absolute;
+  line-height: 20px;
 }
 
 footer h1 {
@@ -905,6 +907,57 @@ footer a {
   .flip-image {
     right: -180px;
   }
+}
+
+.hamburgerIcon {
+  cursor: pointer;
+  height: 21px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  width: 32px;
+  background: transparent;
+  outline: none;
+}
+.hamburgerIcon:focus {
+  outline: none;
+}
+.hamburgerIcon[aria-expanded=true] span:nth-child(1) {
+  left: 50%;
+  top: 9px;
+  width: 0%;
+}
+.hamburgerIcon[aria-expanded=true] span:nth-child(2) {
+  transform: rotate(45deg);
+}
+.hamburgerIcon[aria-expanded=true] span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+.hamburgerIcon[aria-expanded=true] span:nth-child(4) {
+  left: 50%;
+  top: 9px;
+  width: 0%;
+}
+.hamburgerIcon span {
+  background: black;
+  border-radius: 3px;
+  display: block;
+  height: 3px;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  width: 100%;
+}
+.hamburgerIcon span:nth-child(1) {
+  top: 0px;
+}
+.hamburgerIcon span:nth-child(2) {
+  top: 9px;
+}
+.hamburgerIcon span:nth-child(4) {
+  top: 18px;
 }
 
 @font-face {
@@ -1058,6 +1111,14 @@ a {
 
 .mw-600 {
   max-width: 600px;
+}
+
+.mw-800 {
+  max-width: 800px;
+}
+
+.light-cream {
+  background: #f8e3c8;
 }
 
 /*# sourceMappingURL=main.css.map */
