@@ -4,12 +4,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 .btn {
   font-weight: 600;
-  padding: 12px 0;
+  padding: 12px 20px;
 }
 .btn.btn-primary {
   background: #2b189b;
   border-color: #2b189b;
-  padding: 10px 0;
 }
 .btn.btn-orange {
   background: #f26b4d;
@@ -43,6 +42,13 @@
   background: #006654;
   border: none;
 }
+.btn.btn-danger {
+  background: #b5432b;
+}
+.btn.btn-danger:hover {
+  background: #b5432b;
+}
+
 .btn-control-transparant {
   background: rgba(0, 0, 0, 0.56);
   display: flex;
@@ -960,6 +966,21 @@ footer a {
   top: 18px;
 }
 
+.paper-plan {
+  width: 73%;
+  position: absolute;
+  right: -153px;
+}
+
+.zindex-l {
+  position: relative;
+  z-index: 1;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: "Denver-Serial-Bold";
   src: url("../fonts/Denver-Serial-Bold.svg#Denver-Serial-Bold") format("svg"), url("../fonts/Denver-Serial-Bold.ttf") format("truetype"), url("../fonts/Denver-Serial-Bold.woff") format("woff");
@@ -1097,8 +1118,9 @@ a {
   color: #000 !important;
 }
 
-.overflow-scroll {
+.overflow-y-scroll {
   overflow-y: scroll;
+  height: 100%;
 }
 
 .font-xxl {
@@ -1113,12 +1135,40 @@ a {
   max-width: 600px;
 }
 
+.mw-680 {
+  max-width: 680px;
+}
+
+.w-280 {
+  width: 280px;
+}
+
 .mw-800 {
   max-width: 800px;
 }
 
 .light-cream {
   background: #f8e3c8;
+}
+
+.content-fluid {
+  max-width: 1620px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.avatar-l {
+  width: 200px;
+  height: 200px;
+  font-size: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 12px;
+}
+
+.text-underline {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */

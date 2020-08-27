@@ -102,3 +102,21 @@
     }
   }
 }
+.paper-plan {
+  width: 73%;
+  position: absolute;
+  right: -153px;
+}
+.privacy {
+  a {
+  }
+}
+.zindex-l {
+  position: relative;
+  z-index: 1;
+}
+.logo {
+  &:hover {
+    text-decoration: none;
+  }
+}

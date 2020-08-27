@@ -170,8 +170,9 @@ a {
 .text-dark {
   color: #000 !important;
 }
-.overflow-scroll {
+.overflow-y-scroll {
   overflow-y: scroll;
+  height: 100%;
 }
 .font-xxl {
   font-size: 80px;
@@ -182,9 +183,33 @@ a {
 .mw-600 {
   max-width: 600px;
 }
+.mw-680 {
+  max-width: 680px;
+}
+.w-280 {
+  width: 280px;
+}
 .mw-800 {
   max-width: 800px;
 }
 .light-cream {
   background: $theme-light-cream;
+}
+.content-fluid {
+  max-width: 1620px;
+  margin: 0 auto;
+  width: 100%;
+}
+.avatar-l {
+  width: 200px;
+  height: 200px;
+  font-size: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 12px;
+}
+
+.text-underline {
+  text-decoration: underline;
 }

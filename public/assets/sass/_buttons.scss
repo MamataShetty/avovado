@@ -1,10 +1,9 @@
 .btn {
   font-weight: 600;
-  padding: 12px 0;
+  padding: 12px 20px;
   &.btn-primary {
     background: $theme-blue;
     border-color: $theme-blue;
-    padding: 10px 0;
   }
   &.btn-orange {
     background: $theme-orange;
@@ -37,6 +36,12 @@
     border: none;
     &:hover {
       // border: solid 1px $theme-blue;
+    }
+  }
+  &.btn-danger {
+    background: $theme-red;
+    &:hover {
+      background: $theme-red;
     }
   }
 }
