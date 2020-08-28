@@ -268,12 +268,22 @@
 
 .join-meeting {
   background: #006654;
-  height: 100%;
+  height: auto;
+}
+@media (min-width: 767px) {
+  .join-meeting {
+    height: 100%;
+  }
 }
 .join-meeting .meeting-card {
   max-width: 424px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0px;
+}
+@media (min-width: 767px) {
+  .join-meeting .meeting-card {
+    border-radius: 10px;
+  }
 }
 
 .no-video {
@@ -824,6 +834,11 @@ footer a {
   margin: 10px 0;
 }
 
+.avocado-home .navbar-nav .nav-link {
+  font-size: 18px;
+  color: #000;
+}
+
 .modal-custom-settings {
   max-width: 550px;
 }
@@ -1125,6 +1140,10 @@ a {
 
 .font-xxl {
   font-size: 80px;
+}
+
+.font-28 {
+  font-size: 28px;
 }
 
 .box-shadow {
