@@ -1,3 +1,7 @@
+.theme-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .transparent-btn {
   background-color: $theme-transparant;
   border-radius: 4px;
@@ -255,6 +259,9 @@ footer {
     color: $theme-transparant-dark;
     font-size: 16px;
     margin: 10px 0;
+    &:hover {
+      color: $theme-transparant-dark;
+    }
   }
 }
 
@@ -263,4 +270,80 @@ footer {
     font-size: 18px;
     color: #000;
   }
+}
+
+.index-hero-title {
+  font-size: 40px;
+  @media (min-width: 767px) {
+    font-size: 80px;
+  }
+}
+.theree-bird-image {
+  position: absolute;
+  right: 0;
+  top: 39px;
+  z-index: -2;
+  width: 43%;
+}
+.starRating--item--aZoTA {
+  margin: 0 4px;
+  height: 32px;
+  width: 32px;
+}
+
+.index--Hero-butterflyImg {
+  position: absolute;
+  right: 256px;
+  top: -40px;
+  z-index: -1;
+  @media (min-width: 768px) {
+    right: 1000px;
+    top: -128px;
+  }
+}
+.meetingsApi {
+  max-width: 440px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: 120px auto;
+  box-shadow: 0 8px 16px $theme-transparant-grey,
+    0 1px 4px $theme-transparant-grey;
+}
+.index--Api-predatorImg {
+  position: absolute;
+  z-index: 0;
+  bottom: -44px;
+  width: 160px;
+  left: -50px;
+  @media (min-width: 767px) {
+    left: -50px;
+    width: 260px;
+    bottom: 26px;
+  }
+}
+.index--cloudsImg {
+  position: absolute;
+  width: 300px;
+  @media (min-width: 767px) {
+    right: 40px;
+    bottom: 0;
+  }
+}
+.testimonial {
+  padding-bottom: 180px;
+  @media (min-width: 767px) {
+  }
+}
+
+.index--itemVideo {
+  max-width: 400px;
+  width: 100%;
+}
+.min-height-50 {
+  min-height: 50px;
+}
+.text-grey {
+  color: $theme-transparant-dark;
 }

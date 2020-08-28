@@ -10,104 +10,27 @@
 @import "./modal";
 @import "./user";
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 @font-face {
-  font-family: "Denver-Serial-Bold";
-  src: url("../fonts/Denver-Serial-Bold.svg#Denver-Serial-Bold") format("svg"),
-    url("../fonts/Denver-Serial-Bold.ttf") format("truetype"),
-    url("../fonts/Denver-Serial-Bold.woff") format("woff");
-  font-weight: normal;
+  font-family: "avocado Condensed";
   font-style: normal;
-}
-
-@font-face {
-  font-family: "denver-serial-bold";
-  src: url("../fonts/denver-serial-bold.eot");
-  src: url("../fonts/denver-serial-bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/denver-serial-bold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Avenir Book";
-  src: url("../fonts/Avenir-Book.eot");
-  src: url("../fonts/Avenir-Book.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Avenir-Book.woff2") format("woff2"),
-    url("../fonts/Avenir-Book.woff") format("woff"),
-    url("../fonts/Avenir-Book.ttf") format("truetype"),
-    url("../fonts/Avenir-Book.svg#Avenir-Book") format("svg");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
   font-display: swap;
+  src: url("../fonts/WherebyRoslindaleDisplayCondensed-Regular.woff2")
+      format("woff2"),
+    url("../fonts/WherebyRoslindaleDisplayCondensed-Regular.woff")
+      format("woff");
 }
 
 @font-face {
-  font-family: "Avenir";
-  src: url("../fonts/Avenir-Light.eot");
-  src: url("../fonts/Avenir-Light.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Avenir-Light.woff2") format("woff2"),
-    url("../fonts/Avenir-Light.woff") format("woff"),
-    url("../fonts/Avenir-Light.ttf") format("truetype"),
-    url("../fonts/Avenir-Light.svg#Avenir-Light") format("svg");
-  font-weight: 300;
+  font-family: "avocado Text";
   font-style: normal;
+  font-weight: 400;
   font-display: swap;
-}
-
-@font-face {
-  font-family: "Avenir Roman";
-  src: url("../fonts/Avenir-Roman.eot");
-  src: url("../fonts/Avenir-Roman.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Avenir-Roman.woff2") format("woff2"),
-    url("../fonts/Avenir-Roman.woff") format("woff"),
-    url("../fonts/Avenir-Roman.ttf") format("truetype"),
-    url("../fonts/Avenir-Roman.svg#Avenir-Roman") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Avocado";
-  src: url("../fonts/AvenirLTStd-Roman.eot");
-  src: url("../fonts/AvenirLTStd-Roman.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/AvenirLTStd-Roman.woff2") format("woff2"),
-    url("../fonts/AvenirLTStd-Roman.woff") format("woff"),
-    url("../fonts/AvenirLTStd-Roman.ttf") format("truetype"),
-    url("../fonts/AvenirLTStd-Roman.svg#AvenirLTStd-Roman") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Avenir LT Std";
-  src: url("../fonts/AvenirLTStd-Light.eot");
-  src: url("../fonts/AvenirLTStd-Light.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/AvenirLTStd-Light.woff2") format("woff2"),
-    url("../fonts/AvenirLTStd-Light.woff") format("woff"),
-    url("../fonts/AvenirLTStd-Light.ttf") format("truetype"),
-    url("../fonts/AvenirLTStd-Light.svg#AvenirLTStd-Light") format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Denver-Serial-Regular";
-  src: url("../fonts/Denver-Serial-Regular.eot");
-  src: url("../fonts/Denver-Serial-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/Denver-Serial-Regular.svg#Denver-Serial-Regular")
-      format("svg"),
-    url("../fonts/Denver-Serial-Regular.ttf") format("truetype"),
-    url("../fonts/Denver-Serial-Regular.woff") format("woff"),
-    url("../fonts/Denver-Serial-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+  src: url("../fonts/WherebyRoslindaleText-Regular.woff2") format("woff2"),
+    url("../fonts/WherebyRoslindaleText-Regular.woff") format("woff");
 }
 
 html {
@@ -117,14 +40,14 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #000;
   font-size: 16px;
 }
@@ -146,8 +69,11 @@ body {
     height: 100vh;
   }
 }
-.font-denvir {
-  font-family: "denver-serial-bold";
+.font-avocado {
+  font-family: "avocado Text";
+}
+.font-avocado-cond {
+  font-family: "avocado Condensed";
 }
 .border-rounded {
   border-radius: $border-radius;
@@ -175,13 +101,19 @@ a {
   height: 100%;
 }
 .font-xxl {
-  font-size: 80px;
+  font-size: 40px;
+  @media (min-width: 1200px) {
+    font-size: 80px;
+  }
 }
 .font-28 {
   font-size: 28px;
 }
 .box-shadow {
   box-shadow: 0 1px 4px $theme-transparant-grey;
+}
+.mw-560 {
+  max-width: 560px;
 }
 .mw-600 {
   max-width: 600px;
@@ -215,4 +147,14 @@ a {
 
 .text-underline {
   text-decoration: underline;
+}
+.font-700 {
+  font-weight: 700;
+}
+.color-green {
+  color: $theme-1;
+}
+.img-square {
+  height: 40px;
+  width: 40px;
 }

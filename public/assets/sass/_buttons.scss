@@ -1,5 +1,5 @@
 .btn {
-  font-weight: 600;
+  font-weight: 500;
   padding: 12px 20px;
   &.btn-primary {
     background: $theme-blue;
@@ -43,6 +43,14 @@
     &:hover {
       background: $theme-red;
     }
+  }
+  &.btn-lg {
+    line-height: 62px;
+    padding: 0 32px;
+    border-radius: 31px;
+    font-size: 24px;
+    max-width: 320px;
+    width: 100%;
   }
 }
 .btn-control-transparant {
