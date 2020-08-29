@@ -350,3 +350,43 @@ footer {
 .text-grey {
   color: $theme-transparant-dark;
 }
+.loginFormWrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  .ssoButton {
+    width: 100%;
+    line-height: 44px;
+    border-style: outset;
+    border-bottom-color: rgb(118, 118, 118);
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+    border-image-width: 1;
+    border-left-color: rgb(118, 118, 118);
+    border-left-style: outset;
+    border-right-color: rgb(118, 118, 118);
+    border-right-style: outset;
+    border-right-width: 2px;
+    border-top-color: rgb(118, 118, 118);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top-style: outset;
+    border-width: 2px;
+    color: #000;
+  }
+}
+.threeFlyingBirdsImg--2CCam {
+  z-index: 0;
+  right: -20px;
+  top: -136px;
+  width: 140px;
+  position: absolute;
+  @media (min-width: 768px) {
+    right: -20px;
+    width: 200px;
+  }
+  @media (min-width: 991px) {
+    right: -196px;
+    top: -224px;
+    width: 378px;
+  }
+}
