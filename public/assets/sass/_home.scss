@@ -270,6 +270,9 @@ footer {
     font-size: 18px;
     color: #000;
   }
+  footer a {
+    color: $theme-transparant-dark;
+  }
 }
 
 .index-hero-title {

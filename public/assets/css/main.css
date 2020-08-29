@@ -56,6 +56,13 @@
   max-width: 320px;
   width: 100%;
 }
+.btn.ssoButton {
+  font-size: 18px;
+  background: #fff;
+  border-radius: 30px;
+  padding: 5px 40px;
+  box-shadow: 0px 1px 4px black;
+}
 
 .btn-control-transparant {
   background: rgba(0, 0, 0, 0.56);
@@ -853,6 +860,9 @@ footer a:hover {
 .avocado-home .navbar-nav .nav-link {
   font-size: 18px;
   color: #000;
+}
+.avocado-home footer a {
+  color: rgba(0, 0, 0, 0.72);
 }
 
 .index-hero-title {
